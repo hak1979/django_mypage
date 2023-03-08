@@ -1,0 +1,17 @@
+.image {
+    opacity: 1;
+    transition: .5s ease;
+    -webkit-transition: .3s ease-in-out;
+}
+
+.item:hover .image {
+    opacity: 0.3;
+}
+
+.btn-secondary:hover {
+    background-color: lightsteelblue;
+}
+
+.btn:active {
+    background-color: lightcoral !important;
+}

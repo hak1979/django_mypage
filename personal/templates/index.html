@@ -1,0 +1,24 @@
+<!-- Use CSS to style and position the elements on your webpage that you
+created in the previous task (index.html) as attractively as possible. -->
+
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block head %}
+    <link href="{% static 'index/style.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+    
+{% block body %}
+    <div id="contact">
+        <form class="contact-item" action="tel:+447985122567">
+            <button class="tel" type="submit"></button>
+        </form>
+        <form class="contact-item" action="mailto:hakanburcu@hotmail.com">
+            <button class="email" type="submit"></button>
+        </form>
+        <form class="contact-item" action="https://www.linkedin.com/in/hakan-burcu/" target="_blank">
+            <button class="linkedin" type="submit"></button>
+        </form>
+</div>
+{% endblock %}
